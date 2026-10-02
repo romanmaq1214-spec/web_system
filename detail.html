@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Detail - WebSys</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">WebSys</span>
+            </div>
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><span class="search-icon">🔍</span></button>
+                </div>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <span class="username">John Doe</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>WebSys</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-item"><span class="nav-icon">🏠</span> Home</a></li>
+                    <li><a href="login.html" class="nav-item"><span class="nav-icon">🔑</span> Login</a></li>
+                    <li><a href="register.html" class="nav-item"><span class="nav-icon">📝</span> Register</a></li>
+                    <li><a href="dashboard.html" class="nav-item"><span class="nav-icon">📊</span> Dashboard</a></li>
+                    <li><a href="main.html" class="nav-item"><span class="nav-icon">🏠</span> Overview</a></li>
+                    <li><a href="detail.html" class="nav-item active"><span class="nav-icon">👁️</span> Details</a></li>
+                    <li><a href="profile.html" class="nav-item"><span class="nav-icon">⚙️</span> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="detail-header">
+                <h2>Item Details</h2>
+                <div>
+                    <a href="main.html" class="btn btn-outline">Back to List</a>
+                    <a href="#" class="btn btn-primary">Edit Item</a>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <!-- Main Detail -->
+                <div class="col-md-8">
+                    <div class="card detail-view">
+                        <div class="card-header">
+                            <h3>Project Alpha</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-item">
+                                <span class="info-label">ID:</span>
+                                <span class="info-value">#001</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value">Project Alpha</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Status:</span>
+                                <span class="badge badge-success">Active</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Created:</span>
+                                <span class="info-value">Jan 15, 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Due Date:</span>
+                                <span class="info-value">Mar 30, 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Description:</span>
+                                <p class="info-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card detail-view">
+                        <div class="card-header">
+                            <h3>Activity Log</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon success">
+                                        <span class="icon">✅</span>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p class="activity-title"><strong>John Doe</strong> updated the project status to Active</p>
+                                        <p class="activity-description">Project Alpha</p>
+                                        <time class="activity-time">Today, 10:30 AM</time>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon info">
+                                        <span class="icon">🔄</span>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p class="activity-title"><strong>Jane Smith</strong> added a new milestone</p>
+                                        <p class="activity-description">Project Alpha - UI/UX design</p>
+                                        <time class="activity-time">Yesterday, 3:45 PM</time>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon success">
+                                        <span class="icon">💾</span>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p class="activity-title"><strong>System</strong> automated backup completed</p>
+                                        <p class="activity-description">Daily backup</p>
+                                        <time class="activity-time">2 days ago</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Detail -->
+                <div class="col-md-4">
+                    <div class="card detail-view">
+                        <div class="card-header">
+                            <h3>Actions</h3>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-outline w-100 mb-2">Add Comment</a>
+                            <a href="#" class="btn btn-outline w-100 mb-2">Attach File</a>
+                            <a href="#" class="btn btn-outline w-100 mb-2">Share</a>
+                            <a href="#" class="btn btn-danger w-100">Delete Item</a>
+                        </div>
+                    </div>
+
+                    <div class="card detail-view">
+                        <div class="card-header">
+                            <h3>Statistics</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <h3>5</h3>
+                                    <p>Tasks Completed</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3>12</h3>
+                                    <p>Total Tasks</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3>85%</h3>
+                                    <p>Progress</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

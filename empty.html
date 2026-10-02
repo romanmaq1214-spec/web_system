@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty State - WebSys</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">WebSys</span>
+            </div>
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><span class="search-icon">🔍</span></button>
+                </div>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <span class="username">John Doe</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>WebSys</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-item"><span class="nav-icon">🏠</span> Home</a></li>
+                    <li><a href="login.html" class="nav-item"><span class="nav-icon">🔑</span> Login</a></li>
+                    <li><a href="register.html" class="nav-item"><span class="nav-icon">📝</span> Register</a></li>
+                    <li><a href="dashboard.html" class="nav-item"><span class="nav-icon">📊</span> Dashboard</a></li>
+                    <li><a href="main.html" class="nav-item"><span class="nav-icon">🏠</span> Overview</a></li>
+                    <li><a href="profile.html" class="nav-item"><span class="nav-icon">⚙️</span> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="empty-state-icon">
+                            <span class="icon">📭</span>
+                        </div>
+                        <h2>No Items Found</h2>
+                        <p>It looks like there are no items here yet. You can add some by clicking the button below.</p>
+                        <a href="main.html" class="btn btn-primary">Add New Item</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

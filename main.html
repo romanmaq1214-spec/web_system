@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main System - WebSys</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">WebSys</span>
+            </div>
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><span class="search-icon">🔍</span></button>
+                </div>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <span class="username">John Doe</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>WebSys</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-item"><span class="nav-icon">🏠</span> Home</a></li>
+                    <li><a href="login.html" class="nav-item"><span class="nav-icon">🔑</span> Login</a></li>
+                    <li><a href="register.html" class="nav-item"><span class="nav-icon">📝</span> Register</a></li>
+                    <li><a href="dashboard.html" class="nav-item"><span class="nav-icon">📊</span> Dashboard</a></li>
+                    <li><a href="main.html" class="nav-item active"><span class="nav-icon">🏠</span> Overview</a></li>
+                    <li><a href="#" class="nav-item"><span class="nav-icon">👥</span> Team</a></li>
+                    <li><a href="profile.html" class="nav-item"><span class="nav-icon">⚙️</span> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h1>Overview</h1>
+                <p class="welcome-text">Manage your workspace and resources</p>
+            </section>
+
+            <!-- Main Content Cards -->
+            <section class="main-content-cards">
+                <div class="dashboard-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Resources</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#001</td>
+                                            <td>Project Alpha</td>
+                                            <td><span class="badge badge-success">Active</span></td>
+                                            <td>
+                                                <a href="#" class="btn btn-sm btn-outline">View</a>
+                                                <a href="#" class="btn btn-sm btn-outline">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#002</td>
+                                            <td>Project Beta</td>
+                                            <td><span class="badge badge-warning">Pending</span></td>
+                                            <td>
+                                                <a href="#" class="btn btn-sm btn-outline">View</a>
+                                                <a href="#" class="btn btn-sm btn-outline">Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#003</td>
+                                            <td>Project Gamma</td>
+                                            <td><span class="badge badge-danger">On Hold</span></td>
+                                            <td>
+                                                <a href="#" class="btn btn-sm btn-outline">View</a>
+                                                <a href="#" class="btn btn-sm btn-outline">Edit</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Recent Activity</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="activity-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon success">
+                                        <span class="icon">✅</span>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p class="activity-title"><strong>John Doe</strong> completed the design mockup</p>
+                                        <p class="activity-description">Project Alpha - UI/UX design phase</p>
+                                        <time class="activity-time">2 hours ago</time>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon info">
+                                        <span class="icon">🔄</span>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p class="activity-title"><strong>Jane Smith</strong> updated the project timeline</p>
+                                        <p class="activity-description">Project Beta - Schedule adjustment</p>
+                                        <time class="activity-time">5 hours ago</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
